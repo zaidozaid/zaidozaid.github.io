@@ -11,25 +11,22 @@ A minimal static website for Cosmos Imaging Centre (CBCT) suitable for GitHub Pa
 
 ## Deploy to GitHub Pages
 
-1. Create a new GitHub repository named `cosmos-imaging` (or your choice).
-2. Push this folder’s contents to the repository root.
-3. In GitHub, open Settings → Pages → Build and deployment → Source: “Deploy from a branch”, Branch: `main` (or `master`) / root.
-4. Wait 1–2 minutes, then open your site at:
-   - `https://<your-username>.github.io/` if using a user/organization site (repo named `<your-username>.github.io`).
-   - `https://<your-username>.github.io/<repo>/` if using a project site.
+This repo is preconfigured with a GitHub Pages workflow that deploys from the `main` branch root.
+
+After pushing to GitHub, your site will be available at:
+
+- Project site: https://zaidozaid.github.io/cosmosimaging/
+
+If you prefer a user/organization site (root at https://zaidozaid.github.io/), create a repository named `zaidozaid.github.io` and push the same files there.
 
 ## Quick start (PowerShell)
 
 ```powershell
-# From the workspace root containing this folder
+# From the workspace root
 cd c:\VSCode\CosmosImaging
 
-# Initialize git and push (replace USER and REPO)
-git init
-git add .
-git commit -m "Initial commit: Cosmos Imaging Centre static site"
-git branch -M main
-git remote add origin https://github.com/USER/REPO.git
+# Set the remote to your GitHub repo and push
+git remote add origin https://github.com/zaidozaid/cosmosimaging.git
 git push -u origin main
 ```
 
@@ -37,9 +34,10 @@ git push -u origin main
 
 - Update phone, email, and address in `index.html` (search for `80 8222 1020`, `info@cosmosimaging.com`, and address lines).
 - Replace hero and section images by pointing to your own hosted images or add files under `assets/` and update `src`.
-- Tweak colors in `assets/styles.css` (CSS variables at the top).
+- Colors and layout are driven by Tailwind utility classes in `index.html` (via CDN). Minor overrides can go in `assets/styles.css`.
 
 ## Notes
 
 - This site is fully static and doesn’t require a backend.
-- Keep `.nojekyll` to avoid pipeline processing by GitHub Pages.
+- Keep `.nojekyll` so Pages serves assets as-is.
+- A workflow file at `.github/workflows/pages.yml` deploys automatically on pushes to `main`.
