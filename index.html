@@ -9,7 +9,7 @@
     <meta property="og:title" content="Cosmos Imaging Centre — Advanced CBCT Imaging Solutions" />
     <meta property="og:description" content="Precision CBCT diagnostics in New Delhi. Latest technology, experienced team, and patient-centered care." />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://cosmos-imaging-static.lovable.app/assets/cbct-hero-D_ubhf5e.jpg" />
+  <meta property="og:image" content="assets/img/og-image.svg" />
   <meta property="og:url" content="https://zaidozaid.github.io/" />
     <meta name="theme-color" content="#0d1b2a" />
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
@@ -46,14 +46,26 @@
       <div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="flex items-center justify-between py-4">
-            <div class="text-left">
-              <div class="text-blue-700 font-extrabold tracking-tight text-2xl md:text-3xl">Cosmos Imaging Centre</div>
-              <div class="text-gray-500 text-sm md:text-base">Advanced CBCT Imaging Solutions</div>
+            <div class="text-left flex items-center gap-3">
+              <img src="assets/brand/cosmos-logo.png" onerror="this.onerror=null;this.src='assets/brand/cosmos-logo.svg'" alt="Cosmos Imaging Centre logo" class="w-12 h-12 md:w-14 md:h-14 object-contain shrink-0 -m-0.5" />
+              <div>
+                <div class="text-blue-700 font-extrabold tracking-tight text-2xl md:text-3xl">Cosmos Imaging Centre</div>
+                <div class="text-gray-500 text-sm md:text-base">Advanced CBCT Imaging Solutions</div>
+              </div>
             </div>
             <div class="hidden sm:flex items-center space-x-8 text-gray-700 text-sm md:text-base">
-              <div class="flex items-center space-x-2">
+              <div class="flex items-center space-x-2 relative">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="w-5 h-5 text-blue-600"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.25 6.75c0 7.421 6.079 13.5 13.5 13.5.966 0 1.91-.11 2.814-.317a1.5 1.5 0 0 0 1.026-2.235l-1.756-2.927a1.5 1.5 0 0 0-2.024-.542l-2.027 1.051a10.5 10.5 0 0 1-4.316-4.316l1.051-2.027a1.5 1.5 0 0 0-.542-2.024L6.302 3.91A1.5 1.5 0 0 0 4.067 4.94 13.48 13.48 0 0 0 2.25 6.75z"/></svg>
-                <a href="tel:+918082221020" class="hover:text-blue-700 font-medium">80 8222 1020</a>
+                <button id="phones-toggle" class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-50 text-blue-700 hover:bg-blue-100 border border-blue-200 font-medium whitespace-nowrap">
+                  Call: +91&#8209;8082221020
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd"/></svg>
+                </button>
+                <div id="phones-panel" class="hidden absolute right-0 top-8 z-50 w-56 bg-white border border-gray-200 rounded-xl shadow-lg p-2">
+                  <a class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-800 whitespace-nowrap" href="tel:+918082221020">+91&#8209;8082221020</a>
+                  <a class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-800 whitespace-nowrap" href="tel:+918082224123">+91&#8209;8082224123</a>
+                  <a class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-800 whitespace-nowrap" href="tel:+918810609978">+91&#8209;8810609978</a>
+                  <a class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-800" href="tel:+911135730013">011-35730013</a>
+                </div>
               </div>
               <div class="flex items-center space-x-2">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="w-5 h-5 text-blue-600"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21s-6-4.5-6-10a6 6 0 1 1 12 0c0 5.5-6 10-6 10z"/><circle cx="12" cy="11" r="2" fill="currentColor" class="text-blue-600"/></svg>
@@ -61,7 +73,7 @@
               </div>
               <div class="flex items-center space-x-2">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="w-5 h-5 text-blue-600"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6l4 2m4-2a8 8 0 1 1-16 0 8 8 0 0 1 16 0z"/></svg>
-                <span>Mon-Sat: 9:30 AM - 7:00 PM</span>
+                <span>Mon–Fri: 9:30 AM – 7:00 PM · Sat: 10:00 AM – 5:30 PM</span>
               </div>
             </div>
           </div>
@@ -90,7 +102,26 @@
       </div>
     </div>
 
-    
+    <!-- Accreditations Strip -->
+    <section aria-label="Accreditations" class="bg-white border-b border-gray-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+        <div class="flex items-center justify-center gap-4 sm:gap-6 flex-wrap text-sm">
+          <div class="flex items-center gap-2 bg-white rounded-md px-3 py-1.5 shadow-sm border border-gray-200">
+            <img src="assets/logos/cghs.svg" alt="CGHS Empanelled" class="w-6 h-6 object-contain" />
+            <span class="font-medium text-gray-700">CGHS Empanelled</span>
+          </div>
+          <div class="flex items-center gap-2 bg-white rounded-md px-3 py-1.5 shadow-sm border border-gray-200">
+            <img src="assets/logos/qci.svg" alt="QCI Approved" class="w-6 h-6 object-contain" />
+            <span class="font-medium text-gray-700">QCI Approved</span>
+          </div>
+          <div class="flex items-center gap-2 bg-white rounded-md px-3 py-1.5 shadow-sm border border-gray-200">
+            <img src="assets/logos/aerb.svg" alt="AERB Approved" class="w-6 h-6 object-contain" />
+            <span class="font-medium text-gray-700">AERB Approved</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
   <main id="main">
       <!-- Hero Section -->
@@ -113,7 +144,7 @@
               <div class="flex flex-col sm:flex-row gap-4">
                 <a href="tel:+918082221020" class="inline-flex items-center justify-center px-8 py-4 bg-primary text-white rounded-full font-semibold text-lg hover:bg-blue-700 transition-colors">
                   <span class="mr-2">📞</span>
-                  Call Now: 80 8222 1020
+                  Call Now: +91&#8209;8082221020
                 </a>
                 <a href="#contact" class="inline-flex items-center justify-center px-8 py-4 border-2 border-gray-300 text-gray-700 rounded-full font-semibold text-lg hover:bg-gray-50 transition-colors">
                   <span class="mr-2">📅</span>
@@ -141,12 +172,12 @@
             <!-- Right Image -->
             <div class="relative">
               <div class="bg-white rounded-3xl shadow-2xl border border-gray-200 overflow-hidden">
-                <img src="https://cosmos-imaging-static.lovable.app/assets/cbct-hero-D_ubhf5e.jpg" 
-                     alt="Advanced CBCT imaging equipment at Cosmos Imaging Centre" 
-                     class="w-full h-auto" />
+                <img id="hero-cbct" src="assets/img/dental-cbct.jpg" 
+                  alt="Dental CBCT imaging machine" 
+                  class="w-full h-auto" />
                 <div class="absolute bottom-4 right-4 bg-secondary text-white px-4 py-3 rounded-2xl shadow-lg">
-                  <div class="font-bold text-sm">Latest Technology</div>
-                  <div class="text-xs opacity-90">3D Imaging Excellence</div>
+                  <div class="font-bold text-sm">Today: 10:00 AM – 5:30 PM</div>
+                  <div class="text-xs opacity-90">Saturday Timing</div>
                 </div>
               </div>
             </div>
@@ -191,7 +222,7 @@
           <div class="grid lg:grid-cols-2 gap-10 items-start">
             <div>
               <div class="relative bg-white rounded-2xl border border-gray-200 overflow-hidden shadow">
-                <img src="https://cosmos-imaging-static.lovable.app/assets/medical-analysis-DNnk-cQX.jpg" alt="Medical professional analyzing CBCT scans" class="w-full h-auto" />
+                <img id="analysis-img" src="assets/img/analysis.jpg" alt="Medical professional analyzing CBCT scans" class="w-full h-auto" />
                 <div class="absolute top-3 left-3 bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-full shadow">Professional Analysis</div>
               </div>
             </div>
@@ -289,7 +320,12 @@
               <div class="space-y-4 mb-6">
                 <div>
                   <p class="text-gray-600 text-sm">Phone</p>
-                  <a href="tel:+918082221020" class="text-2xl font-bold text-blue-600 hover:text-blue-700">80 8222 1020</a>
+                  <div class="flex flex-col gap-1">
+                    <a href="tel:+918082221020" class="font-bold text-blue-600 hover:text-blue-700 text-lg whitespace-nowrap">+91&#8209;8082221020</a>
+                    <a href="tel:+918082224123" class="font-bold text-blue-600 hover:text-blue-700 text-lg whitespace-nowrap">+91&#8209;8082224123</a>
+                    <a href="tel:+918810609978" class="font-bold text-blue-600 hover:text-blue-700 text-lg whitespace-nowrap">+91&#8209;8810609978</a>
+                    <a href="tel:+911135730013" class="font-bold text-blue-600 hover:text-blue-700 text-lg">011-35730013</a>
+                  </div>
                 </div>
                 <div>
                   <p class="text-gray-600 text-sm">Email</p>
@@ -337,7 +373,7 @@
                 </div>
                 <div class="flex justify-between items-center py-2 border-b border-dashed border-gray-200">
                   <span class="text-gray-600">Saturday</span>
-                  <span class="text-gray-900 font-medium">9:30 AM – 7:00 PM</span>
+                  <span class="text-gray-900 font-medium">10:00 AM – 5:30 PM</span>
                 </div>
                 <div class="flex justify-between items-center py-2">
                   <span class="text-gray-600">Sunday</span>
@@ -361,7 +397,7 @@
             </div>
             <div class="flex gap-3">
               <a href="tel:+918082221020" class="inline-flex items-center justify-center px-6 py-3 bg-white text-gray-900 rounded-full font-semibold shadow hover:bg-gray-100">
-                📞  Call: 80 8222 1020
+                📞  Call: +91&#8209;8082221020
               </a>
               <a href="mailto:info@cosmosimaging.com" class="inline-flex items-center justify-center px-6 py-3 bg-transparent border-2 border-white text-white rounded-full font-semibold hover:bg-white/10">
                 ✉️  Send Email
@@ -383,7 +419,7 @@
           <div>
             <h4 class="text-lg font-semibold mb-4">Quick Contact</h4>
             <div class="space-y-2 text-gray-400">
-              <p>📞 <a href="tel:+918082221020" class="text-blue-400 hover:text-blue-300">80 8222 1020</a></p>
+              <p>📞 <a href="tel:+918082221020" class="text-blue-400 hover:text-blue-300 whitespace-nowrap">+91&#8209;8082221020</a></p>
               <p>📍 3, Mir Dard Road, Gandhi Market, Minto Road, New Delhi 110002</p>
             </div>
           </div>
@@ -397,7 +433,7 @@
         </div>
         
         <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>© 2024 Cosmos Imaging Centre. All rights reserved. | Advanced CBCT Imaging Solutions</p>
+          <p>© 2024–2025 Cosmos Imaging Centre. All rights reserved. | Advanced CBCT Imaging Solutions</p>
         </div>
       </div>
     </footer>

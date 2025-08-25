@@ -31,10 +31,12 @@ git push -u origin main
 
 ## Customization
 
-- Update phone, email, and address in `index.html` (search for `80 8222 1020`, `info@cosmosimaging.com`, and address lines).
-- Replace hero and section images by pointing to your own hosted images or add files under `assets/` and update `src`.
-- Colors and layout are driven by Tailwind utility classes in `index.html` (via CDN). Minor overrides can go in `assets/styles.css`.
 
+### Hero image source
+- The hero image currently hotlinks a Wikimedia Commons CBCT photo (CC BY-SA 4.0).
+- File page: https://commons.wikimedia.org/wiki/File:Cone_Beam_CT.jpg (Author: Ptrump16)
+- Direct image: https://upload.wikimedia.org/wikipedia/commons/1/16/Cone_Beam_CT.jpg
+- To switch back to a local image, place your file at `assets/img/dental-cbct.jpg` (or .png/.svg) and update `index.html` to use that path. JS fallbacks already try local files in this order: JPG → PNG → SVG → `placeholder-hero.svg`.
 ## Notes
 
 - This site is fully static and doesn’t require a backend.
