@@ -15,9 +15,7 @@ This repo is preconfigured with a GitHub Pages workflow that deploys from the `m
 
 After pushing to GitHub, your site will be available at:
 
-- Project site: https://zaidozaid.github.io/cosmosimaging/
-
-If you prefer a user/organization site (root at https://zaidozaid.github.io/), create a repository named `zaidozaid.github.io` and push the same files there.
+- User/Org site: https://zaidozaid.github.io/
 
 ## Quick start (PowerShell)
 
@@ -25,8 +23,9 @@ If you prefer a user/organization site (root at https://zaidozaid.github.io/), c
 # From the workspace root
 cd c:\VSCode\CosmosImaging
 
-# Set the remote to your GitHub repo and push
-git remote add origin https://github.com/zaidozaid/cosmosimaging.git
+# Set the remote to your GitHub repo and push (user site repo)
+git remote remove origin
+git remote add origin https://github.com/zaidozaid/zaidozaid.github.io.git
 git push -u origin main
 ```
 
